@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.clientudp2ev.Client"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox>
+        <TextArea fx:id="chatArea" editable="false"/>
+        <TextField fx:id="messageField"/>
+        <HBox>
+            <Button fx:id="messageButton" text="Send Text" onAction="#sendMessage"/>
+            <Button fx:id="imageButton" text="Send Image" onAction="#chooseAndSendImage"/>
+        </HBox>
+    </VBox>
+</AnchorPane>
